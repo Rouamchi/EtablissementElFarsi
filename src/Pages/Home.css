@@ -1,0 +1,98 @@
+.hide-when-mobile {
+  display: flex;
+  justify-content: space-around;
+}
+
+.show-when-mobile {
+  display: none;
+}
+
+/* text-indigo-600 */
+@media only screen and (max-width: 768px) {
+
+*{
+  margin-right: 0;
+}
+
+.show-when-mobile {
+  display: block;
+}
+.hide-when-mobile {
+  display: none;
+}
+
+/* IN SHOPPING CART */
+.trash{
+  display: none;
+}
+
+.bgImageMobile{
+  position: relative; 
+  width:100%;
+  height: 250px;
+  background-image:url('../Images/heroMobile.png');
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-position: center;
+  overflow: hidden;
+  animation: bgChangeMobile 30s linear infinite;
+}
+
+@keyframes bgChangeMobile{
+  0%{
+    background-image:url('../Images/heroMobile.png');  } 
+  15%{
+    background-image:url('../Images/heroMobile.png');  }
+  20%{
+    background-image:url('../Images/hero1Mobile.png');   } 
+  35%{
+    background-image:url('../Images/hero1Mobile.png');   }
+  40%{
+    background-image:url('../Images/hero2Mobile.png');  }
+  55%{
+    background-image:url('../Images/hero2Mobile.png'); }
+  60%{
+    background-image:url('../Images/hero3Mobile.png');  }
+  75%{
+    background-image:url('../Images/hero3Mobile.png');  }
+  80%{
+    background-image:url('../Images/hero4Mobile.png');  }
+  85%{
+    background-image:url('../Images/hero4Mobile.png');  }
+}
+}
+
+div .bgImage{
+  position: relative; 
+  width:100%;
+  height: 550px;
+  background-image:url('../Images/hero.png');
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-position: center;
+  overflow: hidden;
+  animation: bgChange 30s linear infinite;
+}
+
+@keyframes bgChange{
+  0%{
+      background-image:url('../Images/hero.png');  } 
+  15%{
+      background-image:url('../Images/hero.png');  }
+  20%{
+    background-image:url('../Images/hero1.png');   } 
+  35%{
+    background-image:url('../Images/hero1.png');   }
+  40%{
+    background-image:url('../Images/hero2.png');  }
+  55%{
+      background-image:url('../Images/hero2.png'); }
+  60%{
+    background-image:url('../Images/hero3.png');  }
+  75%{
+    background-image:url('../Images/hero3.png');  }
+  80%{
+    background-image:url('../Images/hero4.png');  }
+  85%{
+    background-image:url('../Images/hero4.png');  }
+}
