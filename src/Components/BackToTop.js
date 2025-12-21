@@ -7,7 +7,7 @@ const BackToTop = () => {
     if (window.scrollY > 300) {
       setVisible(true);
     } else {
-      setVisible(false);
+      setVisible(false); 
     }
   };
 
